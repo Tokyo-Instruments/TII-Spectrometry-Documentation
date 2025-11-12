@@ -43,8 +43,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Clone Docs
         run: |
-          # GIT_LFS_SKIP_SMUDGE=1 git clone -b documentation --depth 1 https://${{ secrets.SMDDOCUMENTATIONTOKEN }}@github.com/Bertz-TII/ARCOptix
-          git clone -b documentation --depth 1 https://${{ secrets.SMDDOCUMENTATIONTOKEN }}@github.com/Bertz-TII/ARCOptix
+          # GIT_LFS_SKIP_SMUDGE=1 git clone -b documentation --depth 1 https://${{ secrets.FTIR_TOKEN }}@github.com/Bertz-TII/ARCOptix
+          git clone -b documentation --depth 1 https://${{ secrets.FTIR_TOKEN }}@github.com/Bertz-TII/ARCOptix
 
           python -m pip install --upgrade pip
           cd ARCOptix/docs
